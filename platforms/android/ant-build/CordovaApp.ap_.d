@@ -36,6 +36,7 @@
 /Users/dickweed/documents/lawyers/platforms/android/assets/www/spec \
 /Users/dickweed/documents/lawyers/platforms/android/assets/www/spec.html \
 /Users/dickweed/documents/lawyers/platforms/android/assets/www/css/index.css \
+/Users/dickweed/documents/lawyers/platforms/android/assets/www/img/cc.jpg \
 /Users/dickweed/documents/lawyers/platforms/android/assets/www/img/logo.png \
 /Users/dickweed/documents/lawyers/platforms/android/assets/www/js/jquery-2.1.3.min.js \
 /Users/dickweed/documents/lawyers/platforms/android/assets/www/js/jquery.mobile-1.4.5.js \
