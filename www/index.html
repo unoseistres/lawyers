@@ -18,6 +18,14 @@
 			});
 
 
+			socket.on ('face', function(data){
+// 			data = h1;
+ 			document.getElementById("feel").innerHTML = data;
+ 			console.log("feeling");
+ 				 
+ 				 				
+			});
+			
 			socket.on ('message', function(data){
 
 				console.log("lawyer:" + data);
@@ -26,10 +34,13 @@
 				 myimg.id = "images";
 
  				 var demo = document.getElementById("demo");
- 				 demo.appendChild(myimg);				
+ 				 demo.appendChild(myimg);
+ 				 
+ 				 
+ 				 				
 			});
 			
-			$document.getElementById('text1').value = '1000';
+			
 			
 		
 		 </script>
@@ -62,6 +73,13 @@
 			width:300px;
 			height:300px;
 		}
+		
+/*
+		#images2{
+			width:300px;
+			height:300px;
+		}
+*/
 		 
 		 h1{
 			 font-family: 'EB Garamond', serif;
@@ -113,10 +131,12 @@
 		.ui-loader {
 			display: none;
 		}
+/*
 		body{
 			background-image: '../img/cc.jpg';
 			display: repeat none;
 		}
+*/
 		 
 		</style>
 	</head>
@@ -128,7 +148,7 @@
 		<textarea id="text1" rows="4" cols="30">write text here</textarea>
 		<p id="home">"How would you feel returning to your home country?"</p>
 		<textarea id="text2" rows="4" cols="30">write text here</textarea>
-		<div id="feel" style="border, solid ", "solid"></div>
+		<div id="feel" style="border, solid ", "solid">"feeling"</div>
 		
 	</body>
 </html>

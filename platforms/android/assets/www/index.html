@@ -18,6 +18,13 @@
 			});
 
 
+			socket.on ('face', function(data){
+// 			data = h1;
+ 			document.getElementById("feel").innerHTML = data;
+ 				 
+ 				 				
+			});
+			
 			socket.on ('message', function(data){
 
 				console.log("lawyer:" + data);
@@ -26,10 +33,13 @@
 				 myimg.id = "images";
 
  				 var demo = document.getElementById("demo");
- 				 demo.appendChild(myimg);				
+ 				 demo.appendChild(myimg);
+ 				 
+ 				 
+ 				 				
 			});
 			
-			$document.getElementById('text1').value = '1000';
+			
 			
 		
 		 </script>
@@ -46,11 +56,29 @@
 			 overflow-y: scroll; 
 			 
 			 }
+		#feel {
+			 position:absolute;
+			 background-color:lightgray;
+			 border:dotted;
+			 width:350px;
+			 height:270px;
+			 left:10px;
+			 top:430px;
+			 overflow-y: scroll; 
+			 
+			 }
 			 
 		#images{
 			width:300px;
 			height:300px;
 		}
+		
+/*
+		#images2{
+			width:300px;
+			height:300px;
+		}
+*/
 		 
 		 h1{
 			 font-family: 'EB Garamond', serif;
@@ -67,6 +95,17 @@
 			 resize: none;
 			 
 		}
+		 textarea#text2 { 
+			 width: 200px; 
+			 height: 266px !important; 
+			 border: 1px solid #999999; 
+			 padding: 5px; 
+			 position: absolute;
+			 left: 390px;
+			 resize: none;
+			 top:430px;
+			 
+		}
 		span.ui-icon-loading{
 			display: hidden;
 		}
@@ -78,21 +117,37 @@
 
 
 		}
+		#home{
+			font-family: "Helvetica",Verdana, serif;
+			 text-align: left center;
+			 font-size: 14;
+			 margin-left: 10px;
+			 top:390px;
+			 position: absolute;
+			
+
+		}
 		.ui-loader {
 			display: none;
 		}
+/*
 		body{
 			background-image: '../img/cc.jpg';
 			display: repeat none;
 		}
+*/
 		 
 		</style>
 	</head>
 	<body>
 		<h1>Catholic Charities Intake Form</h1>
 		<p id="where">"Where did you live?"</p>
+				
 		<div id="demo" style="border, solid ", "solid"></div>
 		<textarea id="text1" rows="4" cols="30">write text here</textarea>
+		<p id="home">"How would you feel returning to your home country?"</p>
+		<textarea id="text2" rows="4" cols="30">write text here</textarea>
+		<div id="feel" style="border, solid ", "solid">"feeling"</div>
 		
 	</body>
 </html>
